@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arrivals · Happy Birthday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="finale">
+
+<div class="page-transition" id="pageTransition"><div class="pt-plane">✈</div></div>
+<canvas id="stars"></canvas>
+<div class="veil"></div>
+<canvas id="confetti-canvas"></canvas>
+
+<div class="statusbar">
+  <a href="index.html" class="brand" data-transition><span class="dot">●</span> AETERNUM AIR</a>
+  <nav id="siteNav"></nav>
+</div>
+<div class="progress-rail" id="progressRail"></div>
+
+<main>
+  <section class="finale">
+    <div class="kicker" style="justify-content:center;">Arrivals</div>
+    <div class="cake" id="cakeBtn" role="button" tabindex="0" aria-label="Blow out the candles">🎂🕯️</div>
+    <h1>Happy birthday.</h1>
+    <p class="lede2">Tap the cake and make a wish — then read what's underneath.</p>
+    <div class="finale-msg" id="finaleMsg"></div>
+    <div class="finale-photo-wrap" id="cakePhotoWrap">
+      <div class="photo" style="--tilt:-2deg;"><img src="cakenya.jpg" alt="Celebrating together"></div>
+    </div>
+    <button class="btn ghost" id="replayBtn" style="display:none;">Light the candles again</button>
+  </section>
+
+  <div class="next-gate" style="justify-content:center;">
+    <a href="index.html" class="btn ghost" data-transition>&larr; Back to the boarding pass</a>
+  </div>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
