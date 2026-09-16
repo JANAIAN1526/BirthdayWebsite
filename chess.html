@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gate 02 · Chess</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="chess">
+
+<div class="page-transition" id="pageTransition"><div class="pt-plane">✈</div></div>
+<canvas id="stars"></canvas>
+<div class="veil"></div>
+<canvas id="confetti-canvas"></canvas>
+
+<div class="statusbar">
+  <a href="index.html" class="brand" data-transition><span class="dot">●</span> FRIENDLY AIR</a>
+  <nav id="siteNav"></nav>
+</div>
+<div class="progress-rail" id="progressRail"></div>
+
+<main>
+  <div class="page-hero">
+    <div class="kicker">Gate 02 · Chess</div>
+    <h1>Three moves ahead, as always.</h1>
+    <p class="lede">Watch the knight run a small tour of the board. It never backtracks, never panics, never loses the thread — it just gets where it's going. Sound familiar?</p>
+  </div>
+
+  <div class="section">
+    <div class="chess-layout">
+      <div class="board reveal" id="board"></div>
+      <div class="chess-copy reveal d2">
+        <button class="btn ghost" id="knightBtn">Replay the knight's tour</button>
+        <div class="reveal-msg" id="chessReveal">Ten moves, zero hesitation. That's not luck — that's just how your brain is wired, on and off the board. Happy birthday to my favorite opponent.</div>
+      </div>
+    </div>
+
+    <div class="chess-photos">
+      <div class="reveal d3"><div class="photo" style="--tilt:-4deg;"><img src="chess1.jpg" alt="At a tournament board"></div></div>
+      <div class="reveal d4"><div class="photo" style="--tilt:3deg;"><img src="chess2.jpg" alt="Deep in thought at the board"></div></div>
+    </div>
+  </div>
+
+  <div class="next-gate">
+    <a href="eras.html" class="btn" data-transition>Next gate: Her Eras <span class="arrow">→</span></a>
+  </div>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>

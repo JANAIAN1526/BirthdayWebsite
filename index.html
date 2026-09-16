@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boarding Pass · Birthday Flight</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+
+<div class="page-transition" id="pageTransition"><div class="pt-plane">✈</div></div>
+<canvas id="stars"></canvas>
+<div class="veil"></div>
+<canvas id="confetti-canvas"></canvas>
+
+<div class="statusbar">
+  <a href="index.html" class="brand" data-transition><span class="dot">●</span> FRIENDLY AIR</a>
+  <nav id="siteNav"></nav>
+</div>
+
+<header class="hero" id="top">
+  <div class="plane-loop" id="planeLoop"></div>
+  <div class="eyebrow">Flight Plan · Departing Now</div>
+  <h1>Cleared for takeoff into<br><em>another year</em> of brilliant</h1>
+  <p class="sub">One flight, four gates, and a whole lot of you: the numbers you love, the games you win, the songs you know by heart, and the sky you're training to own. Tap a gate to board.</p>
+</header>
+
+<div class="pass-wrap">
+  <div class="pass">
+    <div class="pass-main">
+      <div class="pass-row">
+        <div class="pass-brand">Friendly Air<span>Birthday Charter</span></div>
+        <div class="pass-field"><div class="k">Flight</div><div class="v" id="flightNo">—</div></div>
+      </div>
+      <div class="pass-fields">
+        <div class="pass-field pass-passenger">
+          <div class="k">Passenger</div>
+          <div class="pass-passenger-row">
+            <img class="pass-id-photo" src="bbypic.jpg" alt="Passenger, many years ago">
+            <div class="v" id="passName">—</div>
+          </div>
+        </div>
+        <div class="pass-field"><div class="k">From</div><div class="v">Another Year Older</div></div>
+        <div class="pass-field"><div class="k">To</div><div class="v">Best Year Yet</div></div>
+        <div class="pass-field"><div class="k">Seat</div><div class="v" id="passSeat">—</div></div>
+        <div class="pass-field"><div class="k">Gate</div><div class="v">B-DAY</div></div>
+        <div class="pass-field"><div class="k">Boarding</div><div class="v" id="passDate">—</div></div>
+      </div>
+    </div>
+    <div class="pass-stub">
+      <div class="stub-code">AETERNUM</div>
+      <div class="stub-plane">✈</div>
+      <div class="barcode" id="barcode"></div>
+    </div>
+  </div>
+</div>
+
+<div class="gate-grid" id="gateGrid">
+  <a href="math.html" class="gate-card reveal d1" data-gate="math" data-transition>
+    <div class="gtag">Gate 01 <span class="visited-badge">Visited</span></div>
+    <div class="icon">∑</div>
+    <div class="gtitle">Mathematics</div>
+    <div class="gdesc">A puzzle worth solving, for the girl who makes numbers behave.</div>
+    <div class="gfoot">Board now <span>→</span></div>
+  </a>
+  <a href="chess.html" class="gate-card reveal d2" data-gate="chess" data-transition>
+    <div class="gtag">Gate 02 <span class="visited-badge">Visited</span></div>
+    <div class="icon">♞</div>
+    <div class="gtitle">Chess</div>
+    <div class="gdesc">Watch a knight run its tour of the board, ten calculated moves.</div>
+    <div class="gfoot">Board now <span>→</span></div>
+  </a>
+  <a href="eras.html" class="gate-card reveal d3" data-gate="eras" data-transition>
+    <div class="gtag">Gate 03 <span class="visited-badge">Visited</span></div>
+    <div class="icon">✦</div>
+    <div class="gtitle">Her Eras</div>
+    <div class="gdesc">A friendship bracelet and every version of you, ranked undefeated.</div>
+    <div class="gfoot">Board now <span>→</span></div>
+  </a>
+  <a href="aviation.html" class="gate-card reveal d4" data-gate="aviation" data-transition>
+    <div class="gtag">Gate 04 <span class="visited-badge">Visited</span></div>
+    <div class="icon">✈</div>
+    <div class="gtitle">Aviation</div>
+    <div class="gdesc">Your flight plan so far, from ground school to wherever you want.</div>
+    <div class="gfoot">Board now <span>→</span></div>
+  </a>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
